@@ -1,4 +1,4 @@
-# Make Art
+# Boilerplate
 
 > Angular BoilerPlate With Support for Jade (html) and Stylus (css Processor)
 
