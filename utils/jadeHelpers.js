@@ -1,21 +1,21 @@
-var fs = require('fs'),
-    path = require('path');
+// var fs = require('fs'),
+//     path = require('path');
 
-var contentPath = 'content',
-    examplesPath = 'examples';
+// var contentPath = 'content',
+//     examplesPath = 'examples';
 
-function getFileContent (file) {
-    return fs.readFileSync(path.resolve(contentPath, file), 'utf8');
-}
+// function getFileContent (file) {
+//     return fs.readFileSync(path.resolve(contentPath, file), 'utf8');
+// }
 
-module.exports = {
+// module.exports = {
 
-    fileContent: function (file) {
-        return getFileContent(file);
-    },
+//     fileContent: function (file) {
+//         return getFileContent(file);
+//     },
 
-    jsonContent: function (file) {
-        return JSON.parse(getFileContent(file + '.json'));
-    }
+//     jsonContent: function (file) {
+//         return JSON.parse(getFileContent(file + '.json'));
+//     }
 
-};
+// };

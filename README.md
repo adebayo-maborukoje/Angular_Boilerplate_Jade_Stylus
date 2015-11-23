@@ -1,31 +1,25 @@
 # Make Art
 
-> An app for learning programming using a basic CoffeeScript drawing API
+> Angular BoilerPlate With Support for Jade (html) and Stylus (css Processor)
 
-![Screenshot of the App](make-art-screenshot.png)
-
-You can try the app [here »](http://art.kano.me/)
 
 ## Setup
+    clone the repo 
+    run `npm install `
 
-    git clone git@github.com:KanoComputing/make-art.git
-    cd make-art
-    npm install
 
 ## Build
-
-Build the app before running it 
-
-    npm run build
+    `npm run build`
 
 ## Run
-
-    npm start
+    `npm start`
 
 Open your browser at [http://localhost:3000](http://localhost:3000)
 
-## Develop
+## During Development
 
 Run the watch script when developing
 
-    npm run watch
+    you can run `npm run watch`
+
+Happy Usage.....
