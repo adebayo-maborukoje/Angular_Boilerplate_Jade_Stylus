@@ -18,43 +18,22 @@ html(lang='en',  xmlns:ng="http://angularjs.org")
                     return new window.ActiveXObject("Microsoft.XMLHTTP");
                 });
             })();
-        title Draw
+        title Bayo Angular BoilerPlate
 
-    body(id="ng-app", ng-app='draw', class=offline ? 'offline' : 'online')
+    body(id="ng-app", ng-app='draw', class='online')
         script(src='/js/vendor/console-polyfill.js', type='text/javascript')
-        .loading-overlay(ng-cloak): .spinner
-
         include partial/header
         ng-view
-        include partial/splash
 
-        if !offline
-            .kano-feedback-container(ng-click='isFeedbackSplashOpen = true', ng-init='feedbackLoaded()') 
-                span Feedback
-                .kano-feedback
-            include partial/feedback
 
         //- Vendor
         script(src='/js/vendor/angular.min.js', type='text/javascript')
         script(src='/js/vendor/angular-route.min.js', type='text/javascript')
-        script(src='/js/vendor/ace/ace.js', type='text/javascript')
-        script(src='/js/vendor/ace/ext-language_tools.js', type='text/javascript')
-        //- Analytics
-        if segmentioId
-            script(src='/js/vendor/segmentio.min.js', type='text/javascript')
-
         script(type='text/javascript').
             window.ENV = '#{env}';
 
             window.CONFIG = {
                 PRODUCTION      : #{production},
-                OFFLINE         : #{offline},
-                SEGMENTIO_ID    : '#{segmentioId}',
-                FACEBOOK_APP_ID : '#{facebookAppId}',
-                MAILSERVER      : '#{mailServer}',
-                API_URL         : '#{api_url}',
-                WORLD_URL       : '#{world_url}',
-                CHALLENGES_URL  : '#{challenges_url}',
                 TEST_MODE       : #{testmode},
                 ENV             : '#{env}'
             };
@@ -62,6 +41,6 @@ html(lang='en',  xmlns:ng="http://angularjs.org")
         //- App
         script(src='/js/index.js', type='text/javascript')
 
-        //- Livereload
+        Livereload
         if !production
             script(src='http://localhost:35729/livereload.js?snipver=1', type='text/javascript')

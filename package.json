@@ -1,7 +1,7 @@
 {
   "name": "draw",
   "version": "0.1.0",
-  "description": "App to learn programming using a basic CoffeeScript drawing API",
+  "description": "An Angular Js BoilerPlate loaded with Live reload and well structured folder. ** with support for Jade and Stylus for Html and css preprocessing...",
   "main": "index.js",
   "scripts": {
     "start": "node ./server/index.js",
@@ -13,21 +13,21 @@
     "jscs": "jscs lib",
     "test": "./node_modules/.bin/mocha test/**/*"
   },
-  "author": "Tancredi Trugenberger",
+  "author": "Adebayo Maborukoje ",
   "repository": {
     "type": "git",
-    "url": "https://github.com/KanoComputing/kano-draw"
+    "url": ""
   },
   "license": "MIT2",
   "dependencies": {
     "api-service": "1.0.0",
     "cli-color": "~0.2.x",
-    "coffee-script": "~1.7.x",
+
     "color": "^0.7.3",
     "deep-equal": "^1.0.0",
     "express": "^4.10.5",
     "griddy": "0.0.x",
-    "gulp": "~3.5.x",
+    "gulp": "~3.8.x",
     "gulp-browserify": "~0.4.x",
     "gulp-callback": "0.0.3",
     "gulp-jade": "~0.4.x",
@@ -35,14 +35,11 @@
     "gulp-rename": "~0.2.x",
     "gulp-stylus": "^2.0.1",
     "http-server": "~0.6.x",
-    "kano-world-sdk": ">1.0.0",
     "lodash": "~2.4.x",
     "marked": "~0.3.x",
     "moment": "^2.10.6",
     "nib": "~1.0.x",
     "partialify": "^3.1.1",
-    "play-audio": "^0.1.0",
-    "throttle-debounce": "^0.1.1",
     "tiny-lr": "0.0.9"
   },
   "devDependencies": {

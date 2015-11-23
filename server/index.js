@@ -19,4 +19,4 @@ app.use(function (req, res, next) {
 });
 
 app.listen(port);
-console.log(color.green('Listening on port ' + port + '...'));
+console.log(color.blue('Listening on port ' + port + '...'));

@@ -1,14 +1,14 @@
-{
-	"folders":
-	[
-		{
-			"folder_exclude_patterns":
-			[
-				"node_modules",
-				"www"
-			],
-			"follow_symlinks": true,
-			"path": "."
-		}
-	]
-}
+// {
+// 	"folders":
+// 	[
+// 		{
+// 			"folder_exclude_patterns":
+// 			[
+// 				"node_modules",
+// 				"www"
+// 			],
+// 			"follow_symlinks": true,
+// 			"path": "."
+// 		}
+// 	]
+// }
