@@ -16,7 +16,6 @@ var gulp = require('gulp'),
     server = lr(),
     env = process.env.NODE_ENV || 'development',
     production = env === 'production',
-    // mailServer = process.env.MAILSERVER || null,
     api_url = process.env.API_URL || null,
     world_url = process.env.WORLD_URL || null,
     testmode = process.env.TEST_MODE === 'true';
@@ -38,7 +37,6 @@ gulp.task('browserify', function () {
     .pipe(browserify({
         transform : [
             partialify.alsoAllow('md')
-            // partialify.alsoAllow('coffee')
         ],
     }))
     .on('error', handleError)
@@ -65,11 +63,9 @@ gulp.task('views', function () {
         locals : _.extend({
             env             : env,
             production      : production,
-            // mailServer      : mailServer,
             api_url         : api_url,
             world_url       : world_url,
             testmode        : testmode,
-            challenges_url  : "/assets/challenges/descriptors"
         }, jadeHelpers)
     }))
     .on('error', handleError)

@@ -4,7 +4,7 @@
 
 
 ## Setup
-    clone the repo 
+    clone the repo [here](https://github.com/andela-amaborukoje/Angular_Boilerplate_Jade_Stylus)
     run `npm install `
 
 
