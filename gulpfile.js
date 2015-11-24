@@ -17,7 +17,6 @@ var gulp = require('gulp'),
     env = process.env.NODE_ENV || 'development',
     production = env === 'production',
     api_url = process.env.API_URL || null,
-    world_url = process.env.WORLD_URL || null,
     testmode = process.env.TEST_MODE === 'true';
 
 
@@ -64,8 +63,7 @@ gulp.task('views', function () {
             env             : env,
             production      : production,
             api_url         : api_url,
-            world_url       : world_url,
-            testmode        : testmode,
+            testmode        : testmode
         }, jadeHelpers)
     }))
     .on('error', handleError)
